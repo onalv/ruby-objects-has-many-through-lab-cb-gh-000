@@ -16,6 +16,6 @@ class Doctor
   end
 
   def genres
-    self.appointments.collect{|appointment| appointment.genre}
+    self.appointments.collect{|appointment| appointment.patient}
   end
 end
