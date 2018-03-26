@@ -1,10 +1,10 @@
 class Appointment
-  attr_accessor :name, :genre, :artist
+  attr_accessor :name, :appointment, :doctor
 
   def initialize(name, genre)
     @name = name
-    @genre = genre
-    genre.add_song(self)
+    @patient = patient
+    patient.add_appointment(self)
   end
 
 end
