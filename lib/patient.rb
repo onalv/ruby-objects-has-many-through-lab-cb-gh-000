@@ -3,18 +3,18 @@ class Patient
 
   def initialize(name)
     @name = name
-    @songs = []
+    @appointments = []
   end
 
   def add_song(song)
-    self.songs << song
+    self.appointments << song
   end
 
-  def songs
-    @songs
+  def appointments
+    @appointments
   end
 
   def artists
-    self.songs.collect{|song| song.artist}
+    self.appointments.collect{|song| song.artist}
   end
 end
