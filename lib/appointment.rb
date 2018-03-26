@@ -1,7 +1,7 @@
 class Appointment
   attr_accessor :name, :appointment, :doctor
 
-  def initialize(name, genre)
+  def initialize(name, patient)
     @name = name
     @patient = patient
     patient.add_appointment(self)
