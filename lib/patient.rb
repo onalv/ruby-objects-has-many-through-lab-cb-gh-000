@@ -14,7 +14,7 @@ class Patient
     @appointments
   end
 
-  def artists
-    self.appointments.collect{|appointment| appointment.artist}
+  def doctors
+    self.appointments.collect{|appointment| appointment.doctor}
   end
 end
