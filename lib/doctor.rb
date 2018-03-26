@@ -6,9 +6,9 @@ class Doctor
     @appointments = []
   end
 
-  def add_song(song)
-    self.appointments << song
-    song.artist = self
+  def add_appointment(appointment)
+    self.appointments << appointment
+    appointment.doctor = self
   end
 
   def appointments
@@ -16,6 +16,6 @@ class Doctor
   end
 
   def genres
-    self.appointments.collect{|song| song.genre}
+    self.appointments.collect{|appointment| appointment.genre}
   end
 end
